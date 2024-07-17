@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import './Dashboard.css'
 import DashSide from '../../Components/DashSide/DashSide';
+import { FaBarsStaggered } from 'react-icons/fa6';
+import { isMobile } from 'react-device-detect';
 
 const Dashboard = () => {
+
+ 
+
     return (
-        <div className='w-[20%] bg bg-no-repeat bg-cover bg-center m-auto mt-10'>
-            
+        <div className={`flex lg:w-[40%] min-h-screen border m-auto `}>
+           <DashSide></DashSide>
             <Outlet></Outlet>
         </div>
     );

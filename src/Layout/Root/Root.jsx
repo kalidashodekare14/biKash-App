@@ -3,8 +3,10 @@ import { Outlet } from 'react-router-dom';
 import './Root.css'
 
 const Root = () => {
+
+
     return (
-        <div className='w-[20%] bg bg-no-repeat bg-cover bg-center m-auto mt-10'>
+        <div className={`lg:w-[40%] min-h-screen border m-auto`}>
             <Outlet></Outlet>
         </div>
     );

@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/dashboard',
-                element: <SendMoney></SendMoney>      
+                element: <SendMoney></SendMoney>
             }
         ]
     }
