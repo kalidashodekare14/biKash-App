@@ -4,6 +4,9 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import SendMoney from "../Components/SendMoney/SendMoney";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import CashOut from "../Components/CashOut/CashOut";
+import CashIn from "../Components/CashIn/CashIn";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <SendMoney></SendMoney>
+            },
+            {
+                path: 'cash-out',
+                element: <CashOut></CashOut>
+            },
+            {
+                path: 'cash-in',
+                element: <CashIn></CashIn>
+            },
+            {
+                path: 'cash-in',
+                element: <CashIn></CashIn>
             }
         ]
     }
